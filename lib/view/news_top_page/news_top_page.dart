@@ -5,8 +5,6 @@ import 'package:newslist/widgets/widgets.dart';
 import 'widgets/bottomBar.dart';
 import 'widgets/news_list.dart';
 
-final _bottomIndexProvider = StateProvider((_) => 0);
-
 class NewsTopPage extends ConsumerWidget {
   const NewsTopPage({Key? key}) : super(key: key);
 
