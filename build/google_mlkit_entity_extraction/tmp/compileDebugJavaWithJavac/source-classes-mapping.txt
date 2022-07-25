@@ -1,0 +1,6 @@
+com/google_mlkit_entity_extraction/BuildConfig.java
+ com.google_mlkit_entity_extraction.BuildConfig
+com/google_mlkit_entity_extraction/EntityExtractor.java
+ com.google_mlkit_entity_extraction.EntityExtractor
+com/google_mlkit_entity_extraction/GoogleMlKitEntityExtractionPlugin.java
+ com.google_mlkit_entity_extraction.GoogleMlKitEntityExtractionPlugin

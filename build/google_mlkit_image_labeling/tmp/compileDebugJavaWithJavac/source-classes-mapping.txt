@@ -1,0 +1,6 @@
+com/google_mlkit_image_labeling/GoogleMlKitImageLabelingPlugin.java
+ com.google_mlkit_image_labeling.GoogleMlKitImageLabelingPlugin
+com/google_mlkit_image_labeling/ImageLabelDetector.java
+ com.google_mlkit_image_labeling.ImageLabelDetector
+com/google_mlkit_image_labeling/BuildConfig.java
+ com.google_mlkit_image_labeling.BuildConfig

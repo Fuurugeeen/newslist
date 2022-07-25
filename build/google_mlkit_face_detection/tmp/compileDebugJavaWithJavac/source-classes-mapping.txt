@@ -1,0 +1,6 @@
+com/google_mlkit_face_detection/FaceDetector.java
+ com.google_mlkit_face_detection.FaceDetector
+com/google_mlkit_face_detection/BuildConfig.java
+ com.google_mlkit_face_detection.BuildConfig
+com/google_mlkit_face_detection/GoogleMlKitFaceDetectionPlugin.java
+ com.google_mlkit_face_detection.GoogleMlKitFaceDetectionPlugin

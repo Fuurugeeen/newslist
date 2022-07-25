@@ -1,0 +1,6 @@
+com/google_mlkit_barcode_scanning/BarcodeScanner.java
+ com.google_mlkit_barcode_scanning.BarcodeScanner
+com/google_mlkit_barcode_scanning/GoogleMlKitBarcodeScanningPlugin.java
+ com.google_mlkit_barcode_scanning.GoogleMlKitBarcodeScanningPlugin
+com/google_mlkit_barcode_scanning/BuildConfig.java
+ com.google_mlkit_barcode_scanning.BuildConfig

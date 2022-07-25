@@ -1,0 +1,120 @@
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+
+// def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+// if (flutterVersionCode == null) {
+//     // flutterVersionCode = '1'
+//     flutterVersionCode = '11'
+// }
+// 
+// def flutterVersionName = localProperties.getProperty('flutter.versionName')
+// if (flutterVersionName == null) {
+//     flutterVersionName = '3.0'
+// }
+def flutterVersionCode = '15'
+def flutterVersionName = '4.3'
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+// apply plugin: 'com.google.gms.google-services'
+
+//def keystoreProperties = new Properties()
+//def keystorePropertiesFile = rootProject.file('key.properties')
+//def keystorePropertiesFile = rootProject.file('app/key.properties')
+// if (keystorePropertiesFile.exists()) {
+//     keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+// }
+
+android {
+    // compileSdkVersion 31
+    compileSdkVersion 31
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        applicationId "jp.co.furugen.newslist"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+
+    // signingConfigs {
+    //     release {
+    //         keyAlias keystoreProperties['keyAlias']
+    //         keyPassword keystoreProperties['keyPassword']
+    //         storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+    //         storePassword keystoreProperties['storePassword']
+    //     }
+    // }
+
+    buildTypes {
+        release {
+            // // Signing with the debug keys for now, so `flutter run --release` works.
+            // signingConfig signingConfigs.release
+            // aaptOptions {
+            //     //ignoreAssetsPattern '!mlkit_pose:!mlkit_label_default_model:'
+            //     ignoreAssetsPattern '!mlkit_pose:'
+            // }
+        }
+        debug {
+            // signingConfig signingConfigs.debug
+            // aaptOptions {
+            //     // ignoreAssetsPattern '!mlkit_pose:!mlkit_label_default_model:'
+            //     ignoreAssetsPattern '!mlkit_pose:'
+            // }
+        }
+    }
+
+    dependencies {
+        // implementation 'com.google.android.gms:play-services-vision:20.1.1'
+        // implementation 'com.google.android.gms:play-services-vision-common:19.1.1'
+    }
+
+    packagingOptions {
+        exclude 'lib/**/libtranslate_jni.so'
+        exclude 'lib/**/libdigitalink.so'
+        exclude 'lib/**/libxeno_native.so'
+        // exclude 'lib/**/libmlkitcommonpipeline.so'
+        // exclude 'lib/**/libbarhopper_v2.so'
+        exclude 'lib/**/libclassifier_jni.so'
+        exclude 'lib/**/libface_detector_v2_jni.so'
+        exclude 'lib/**/libtensorflowlite_jni.so'
+        exclude 'lib/**/liblanguage_id_jni.so'
+    }
+
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+
+    // implementation platform('com.google.firebase:firebase-bom:28.1.0')
+    // implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // // 下記メッセージが出てビルド直後に画面落ちるもビルドは続けて実行されていた
+    // // requires that one of FLAG_IMMUTABLE or FLAG_MUTABLE be specified when creating a PendingIntent
+    // implementation 'androidx.work:work-runtime-ktx:2.7.0-alpha03'
+
+    
+    //implementation 'com.google.firebase:firebase-ml-vision:'
+    //implementation 'com.google.firebase:firebase-ml-vision-barcode-model:16.0.1'
+    // api 'com.google.firebase:firebase-ml-vision-image-label-model:17.0.2'
+    //api 'com.google.firebase:firebase-ml-vision-image-label-model:19.0.0'
+}

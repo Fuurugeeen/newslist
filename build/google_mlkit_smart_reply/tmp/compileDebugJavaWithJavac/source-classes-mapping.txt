@@ -1,0 +1,6 @@
+com/google_mlkit_smart_reply/GoogleMlKitSmartReplyPlugin.java
+ com.google_mlkit_smart_reply.GoogleMlKitSmartReplyPlugin
+com/google_mlkit_smart_reply/BuildConfig.java
+ com.google_mlkit_smart_reply.BuildConfig
+com/google_mlkit_smart_reply/SmartReply.java
+ com.google_mlkit_smart_reply.SmartReply

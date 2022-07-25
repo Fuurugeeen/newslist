@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\common\\git\\other\\newslist\\build\\path_provider_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\fa39506c221e0c054021f93a114bacc0\\core-1.6.0\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\common\\git\\other\\newslist\\build\\path_provider_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\fa39506c221e0c054021f93a114bacc0\\core-1.6.0\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\common\\git\\other\\newslist\\build\\path_provider_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\fa39506c221e0c054021f93a114bacc0\\core-1.6.0\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\common\\git\\other\\newslist\\build\\path_provider_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\fa39506c221e0c054021f93a114bacc0\\core-1.6.0\\res\\layout-v21\\notification_action.xml"
+    }
+]

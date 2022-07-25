@@ -1,0 +1,6 @@
+com/google_mlkit_translation/TextTranslator.java
+ com.google_mlkit_translation.TextTranslator
+com/google_mlkit_translation/BuildConfig.java
+ com.google_mlkit_translation.BuildConfig
+com/google_mlkit_translation/GoogleMlKitTranslationPlugin.java
+ com.google_mlkit_translation.GoogleMlKitTranslationPlugin

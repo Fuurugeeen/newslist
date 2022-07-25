@@ -1,0 +1,193 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="jp.co.furugen.newslist"
+4    android:versionCode="15"
+5    android:versionName="4.3" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:20:3-64
+14-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:20:20-62
+15
+16    <queries>
+16-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:3:3-19:13
+17
+18        <!-- If your app opens https URLs -->
+19        <intent>
+19-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:5:5-8:14
+20            <action android:name="android.intent.action.VIEW" />
+20-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:6:7-59
+20-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:6:15-56
+21
+22            <data android:scheme="https" />
+22-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:7:7-38
+22-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:7:13-35
+23        </intent>
+24        <!-- If your app makes calls -->
+25        <intent>
+25-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:10:5-13:14
+26            <action android:name="android.intent.action.DIAL" />
+26-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:11:7-59
+26-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:11:15-56
+27
+28            <data android:scheme="tel" />
+28-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:7:7-38
+28-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:7:13-35
+29        </intent>
+30        <!-- If your app emails -->
+31        <intent>
+31-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:15:5-18:14
+32            <action android:name="android.intent.action.SEND" />
+32-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:16:7-59
+32-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:16:15-56
+33
+34            <data android:mimeType="*/*" />
+34-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:7:7-38
+35        </intent>
+36        <intent>
+36-->[:file_picker] C:\common\git\other\newslist\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:18
+37            <action android:name="android.intent.action.GET_CONTENT" />
+37-->[:file_picker] C:\common\git\other\newslist\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-72
+37-->[:file_picker] C:\common\git\other\newslist\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-69
+38
+39            <data android:mimeType="*/*" />
+39-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:7:7-38
+40        </intent>
+41        <intent>
+41-->[:flutter_tts] C:\common\git\other\newslist\build\flutter_tts\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-10:18
+42            <action android:name="android.intent.action.TTS_SERVICE" />
+42-->[:flutter_tts] C:\common\git\other\newslist\build\flutter_tts\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-72
+42-->[:flutter_tts] C:\common\git\other\newslist\build\flutter_tts\intermediates\merged_manifest\debug\AndroidManifest.xml:9:21-69
+43        </intent>
+44    </queries>
+45
+46    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+46-->[:file_picker] C:\common\git\other\newslist\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-80
+46-->[:file_picker] C:\common\git\other\newslist\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-77
+47    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+47-->[:connectivity_plus] C:\common\git\other\newslist\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
+47-->[:connectivity_plus] C:\common\git\other\newslist\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-76
+48
+49    <application
+49-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:21:4-64:19
+50        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+50-->[androidx.core:core:1.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fa39506c221e0c054021f93a114bacc0\core-1.6.0\AndroidManifest.xml:24:18-86
+51        android:debuggable="true"
+52        android:icon="@mipmap/launcher_icon"
+52-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:23:9-45
+53        android:label="News"
+53-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:22:9-29
+54        android:supportsRtl="true"
+54-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:24:9-35
+55        android:usesCleartextTraffic="true" >
+55-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:25:9-44
+56        <activity
+56-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:26:9-55:20
+57            android:name="jp.co.reimei.ship.MainActivity"
+57-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:27:13-41
+58            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+58-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:30:13-163
+59            android:exported="true"
+59-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:33:13-38
+60            android:hardwareAccelerated="true"
+60-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:31:13-47
+61            android:launchMode="singleTop"
+61-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:28:13-43
+62            android:theme="@style/LaunchTheme"
+62-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:29:13-47
+63            android:windowSoftInputMode="adjustResize" >
+63-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:32:13-55
+64
+65            <!--
+66                 Specifies an Android theme to apply to this Activity as soon as
+67                 the Android process has started. This theme is visible to the user
+68                 while the Flutter UI initializes. After that, this theme continues
+69                 to determine the Window background behind the Flutter UI.
+70            -->
+71            <meta-data
+71-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:38:13-41:17
+72                android:name="io.flutter.embedding.android.NormalTheme"
+72-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:39:15-70
+73                android:resource="@style/NormalTheme" />
+73-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:40:15-52
+74            <!--
+75                 Displays an Android View that continues showing the launch screen
+76                 Drawable until Flutter paints its first frame, then this splash
+77                 screen fades out. A splash screen is useful to avoid any visual
+78                 gap between the end of Android's launch screen and the painting of
+79                 Flutter's first frame.
+80            -->
+81            <meta-data
+81-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:47:13-50:17
+82                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+82-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:48:15-79
+83                android:resource="@drawable/launch_background" />
+83-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:49:15-61
+84
+85            <intent-filter>
+85-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:51:13-54:29
+86                <action android:name="android.intent.action.MAIN" />
+86-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:52:17-68
+86-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:52:25-66
+87
+88                <category android:name="android.intent.category.LAUNCHER" />
+88-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:53:17-76
+88-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:53:27-74
+89            </intent-filter>
+90        </activity>
+91        <!--
+92             Don't delete the meta-data below.
+93             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+94        -->
+95        <meta-data
+95-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:58:9-60:33
+96            android:name="flutterEmbedding"
+96-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:59:13-44
+97            android:value="2" />
+97-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:60:13-30
+98        <meta-data
+98-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:61:8-63:42
+99            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+99-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:62:12-69
+100            android:value="ocr,barcode" />
+100-->C:\common\git\other\newslist\android\app\src\main\AndroidManifest.xml:63:12-39
+101
+102        <provider
+102-->[:image_picker_android] C:\common\git\other\newslist\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+103            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+103-->[:image_picker_android] C:\common\git\other\newslist\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-82
+104            android:authorities="jp.co.furugen.newslist.flutter.image_provider"
+104-->[:image_picker_android] C:\common\git\other\newslist\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-74
+105            android:exported="false"
+105-->[:image_picker_android] C:\common\git\other\newslist\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+106            android:grantUriPermissions="true" >
+106-->[:image_picker_android] C:\common\git\other\newslist\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+107            <meta-data
+107-->[:image_picker_android] C:\common\git\other\newslist\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:75
+108                android:name="android.support.FILE_PROVIDER_PATHS"
+108-->[:image_picker_android] C:\common\git\other\newslist\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
+109                android:resource="@xml/flutter_image_picker_file_paths" />
+109-->[:image_picker_android] C:\common\git\other\newslist\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-72
+110        </provider>
+111
+112        <uses-library
+112-->[androidx.window:window:1.0.0-beta04] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\edbf1538d886604beeefb354771c0542\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+113            android:name="androidx.window.extensions"
+113-->[androidx.window:window:1.0.0-beta04] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\edbf1538d886604beeefb354771c0542\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+114            android:required="false" />
+114-->[androidx.window:window:1.0.0-beta04] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\edbf1538d886604beeefb354771c0542\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+115        <uses-library
+115-->[androidx.window:window:1.0.0-beta04] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\edbf1538d886604beeefb354771c0542\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+116            android:name="androidx.window.sidecar"
+116-->[androidx.window:window:1.0.0-beta04] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\edbf1538d886604beeefb354771c0542\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+117            android:required="false" />
+117-->[androidx.window:window:1.0.0-beta04] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\edbf1538d886604beeefb354771c0542\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+118    </application>
+119
+120</manifest>

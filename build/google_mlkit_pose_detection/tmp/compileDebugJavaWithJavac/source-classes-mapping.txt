@@ -1,0 +1,6 @@
+com/google_mlkit_pose_detection/PoseDetector.java
+ com.google_mlkit_pose_detection.PoseDetector
+com/google_mlkit_pose_detection/GoogleMlKitPoseDetectionPlugin.java
+ com.google_mlkit_pose_detection.GoogleMlKitPoseDetectionPlugin
+com/google_mlkit_pose_detection/BuildConfig.java
+ com.google_mlkit_pose_detection.BuildConfig

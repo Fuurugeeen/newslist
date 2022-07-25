@@ -1,0 +1,6 @@
+com/google_mlkit_language_id/LanguageDetector.java
+ com.google_mlkit_language_id.LanguageDetector
+com/google_mlkit_language_id/GoogleMlKitLanguageIdPlugin.java
+ com.google_mlkit_language_id.GoogleMlKitLanguageIdPlugin
+com/google_mlkit_language_id/BuildConfig.java
+ com.google_mlkit_language_id.BuildConfig
